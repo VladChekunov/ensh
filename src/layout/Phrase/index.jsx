@@ -2,14 +2,20 @@ import { useLocation } from "preact-iso";
 
 export function Phrase() {
 	const location = useLocation();
-	const phrase = location.query.p ?? "London is the capital city of the United Kingdom.";
+	const base64Phrase = location.query.tgWebAppStartParam;
+	
+	const phrase = (
+		base64Phrase 
+			? atob(base64Phrase) 
+			: location.query.p
+	) ?? "London is the capital city of the United Kingdom.";
+
 	const words = phrase.split(' ');
 
-	const parameters = JSON.stringify(location.query);
+	// const parameters = JSON.stringify();
 
 	return (
         <div class="wrapper">
-			{ parameters }
 			{
 				words.map((word, index) => (
 					<Word word={word}></Word>
