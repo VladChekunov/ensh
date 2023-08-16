@@ -5,7 +5,6 @@ export function Phrase() {
 	// const phrase = location.query.p;
 	// const words = phrase.split(' ');
 
-	// console.log(words);
 	const words = ["Hello,", "english", "World!"];
 
 	return (
