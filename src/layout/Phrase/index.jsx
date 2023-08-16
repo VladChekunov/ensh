@@ -6,7 +6,7 @@ export function Phrase() {
 	// const words = phrase.split(' ');
 
 	// console.log(words);
-	const words = ["Hello,", "World!"]
+	const words = ["Hello,", "english", "World!"];
 
 	return (
         <div class="wrapper">

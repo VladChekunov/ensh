@@ -4,14 +4,13 @@ import { LocationProvider, Router, Route, useLocation } from 'preact-iso';
 import { Phrase } from './layout/Phrase/index.jsx';
 import './style.css';
 
-export function App() {
-	
+export function App() {	
 	return (
 		<LocationProvider>
 			<main>
 				<Router>
-					<Route path="/" component={Phrase} />
-					<Route path="/test" component={Phrase} />
+					<Route path="/ensh/" component={Phrase} />
+					<Route path="/ensh/test" component={Phrase} />
 				</Router>
 			</main>
 		</LocationProvider>
