@@ -1,11 +1,12 @@
 import { useLocation } from "preact-iso";
 
 export function Phrase() {
-	const location = useLocation();
-	const phrase = location.query.p;
-	const words = phrase.split(' ');
+	// const location = useLocation();
+	// const phrase = location.query.p;
+	// const words = phrase.split(' ');
 
-	console.log(words);
+	// console.log(words);
+	const words = ["Hello,", "World!"]
 
 	return (
         <div class="wrapper">
