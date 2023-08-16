@@ -8,7 +8,7 @@
 
 	margin: 0;
 	background-color: var(--block-bg-color);
-	color: var(--text-color);
+	color: var(--tg-theme-text-color);
 	color-scheme: var(--tg-color-scheme);
 }
 
