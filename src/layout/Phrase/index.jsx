@@ -12,8 +12,6 @@ export function Phrase() {
 
 	const words = phrase.split(' ');
 
-	// const parameters = JSON.stringify();
-
 	return (
         <div class="wrapper">
 			{
@@ -21,14 +19,27 @@ export function Phrase() {
 					<Word word={word}></Word>
 				))
 			}
+			<BottomSheet></BottomSheet>
         </div>
 	);
 }
 
+function wordClickHandle(word) {
+	alert(word);
+}
+
 function Word(props) {
 	return (
-		<a target="_blank" class="word">
+		<a class="word" onClick={() => wordClickHandle(props.word)}>
 			{ props.word }
 		</a>
 	);
+}
+
+function BottomSheet(props) {
+	return (
+		<div class="buttomSheet hide">
+			Hello world!
+		</div>
+	)
 }

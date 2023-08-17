@@ -10,6 +10,11 @@
 	background-color: var(--block-bg-color);
 	color: var(--tg-theme-text-color);
 	color-scheme: var(--tg-color-scheme);
+
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
 }
 
 .wrapper {
@@ -26,4 +31,24 @@
 	border-radius: 20px;
 	cursor: pointer;
 	font-size: 18px;
+}
+
+.buttomSheet {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50%;
+	background: var(--block-bg-color);
+	box-shadow: 0rem -0.125rem 0.5rem 0 rgba(0, 0, 0, 0.16);
+	padding: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	transition: bottom 0.4s ease;
+}
+
+.buttomSheet.hide {
+	bottom: -100%;
+	transition: bottom 0.3s ease;
 }
